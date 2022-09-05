@@ -22,7 +22,7 @@ public class Day3Assesment {
 		System.out.println("\nQ2: Even numbers exist in the list: " + evenList);
 		
 		// Q3
-		long count = numbers.stream().count();
+		long count = numbers.stream().collect(Collectors.counting());
 		System.out.println("\nQ3: Total number of elements in the list = " + count);
 
 	}
